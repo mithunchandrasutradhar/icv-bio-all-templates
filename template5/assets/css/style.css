@@ -1,0 +1,137 @@
+:root {
+  --primary: #333953;
+  --primary-bg: #dfe6ee;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+  background-color: var(--primary-bg);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  padding-top: 175px;
+}
+
+.bg-background {
+  height: 500px;
+  background-color: var(--primary);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.person-name {
+  font-size: 100px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bio p {
+  font-size: 18px;
+}
+
+.social a i {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.section-padding {
+  padding: 25px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.custom-card {
+  background-color: #fff;
+  padding: 20px 25px;
+}
+
+.call a i {
+  border: 1px solid var(--primary-bg);
+  font-size: 20px;
+  padding: 5px;
+}
+
+.hover .image {
+  overflow: hidden;
+  max-height: 300px;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.hover img {
+  transition: all 0.3s ease;
+}
+
+.hover:hover img {
+  transform: scale(1.1);
+}
+
+.product-title {
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+a.purchase-button {
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.save-button a {
+  background: var(--secondary);
+  padding: 5px 15px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero {
+    padding-top: 25px;
+  }
+
+  .person-name {
+    font-size: 35px;
+  }
+
+  .bio {
+    color: #fff;
+  }
+
+  .hero .section-title {
+    color: #fff;
+    margin-top: 25px;
+  }
+
+  .social {
+    margin-bottom: 25px;
+  }
+
+  .social a {
+    color: #fff;
+  }
+
+  .product-price {
+    margin-bottom: 10px;
+  }
+}
