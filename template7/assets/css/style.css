@@ -1,0 +1,164 @@
+:root {
+  --primary: #2e65bc;
+  --primary-bg: #f8f9fb;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+  background-color: var(--primary-bg);
+  color: #1e1727;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.custom-card {
+  background-color: #fff;
+  padding: 25px 35px;
+  border-radius: 30px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+
+}
+
+.custom-card-height {
+  min-height: 43vh;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.save-button a {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.social-title {
+  font-size: 14px;
+}
+
+.social a i,
+.call a i {
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+}
+
+.social a i:hover,
+.call a i:hover {
+  background-color: #fff;
+  color: var(--primary);
+
+}
+
+.hover.images {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.hover .image {
+  overflow: hidden;
+  max-height: 300px;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.hover img {
+  transition: all 0.3s ease;
+}
+
+.hover:hover img {
+  transform: scale(1.1);
+}
+
+.custom-nav {
+  border: 0;
+  margin-top: 30px;
+}
+
+.custom-nav .nav-link {
+  border: 0;
+  color: #1e1727;
+  border-radius: 5px;
+}
+
+.custom-nav .nav-link.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.product-title {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #1e1727;
+}
+
+.product-price {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+a.purchase-button {
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 15px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .save-button {
+    margin-top: 30px;
+  }
+
+  .person-name {
+    font-size: 26px;
+
+  }
+
+  .custom-card {
+    padding: 15px;
+  }
+
+  .product-price {
+    margin-bottom: 10px;
+  }
+
+  a.purchase-button {
+    padding: 5px 10px;
+  }
+
+  .social-title {
+    font-size: 18px;
+  }
+}
